@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us || Itco</title>
+  <link rel="stylesheet" href="header.css"/>
+  <link rel="stylesheet" href="contact.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+
+  <div class="headerline">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Jones Street, New York, USA</span>
+    <span class="line">|</span>
+    <i class="fa-solid fa-envelope"></i>
+    <span>Info@example.com</span>
+    <span class="line">|</span>
+    <i class="fa-solid fa-phone"></i>
+    <span>+0123456789</span>
+    <div class="social-icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       NAVBAR
+  ══════════════════════════════ -->
+  <div class="navbar-wrap">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Itco Logo"/>
+      </div>
+      <ul class="nav-menu">
+        <li class="has-dropdown">
+          <a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="home1.html">Home One</a></li>
+            <li><a href="home2.html">Home Two</a></li>
+            <li><a href="home3.html">Home Three</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="serviceDetails.html">Service Details</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="team.html">Team</a></li>
+            <li><a href="teamdetails.html">Team Details</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="projectdetails.html">Project Details</a></li>
+            <li><a href="Testimonials.html">Testimonials</a></li>
+            <li><a href="priceplan.html">Price Plan</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="404.html">404</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Blogdetails.html">Blog Details</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="active-link">Contact</a></li>
+        <li>
+          <button class="button">Get A Free Quote</button>
+        </li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       HERO / PAGE BANNER
+  ══════════════════════════════ -->
+  <section class="page-hero">
+    <!-- geometric ray lines SVG background -->
+    <svg class="hero-bg-svg" viewBox="0 0 1400 480" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="rgba(255,255,255,0.07)" stroke-width="1" fill="none">
+        <!-- radiate lines from top-right -->
+        <line x1="1400" y1="0" x2="0"    y2="480"/>
+        <line x1="1400" y1="0" x2="100"  y2="480"/>
+        <line x1="1400" y1="0" x2="200"  y2="480"/>
+        <line x1="1400" y1="0" x2="300"  y2="480"/>
+        <line x1="1400" y1="0" x2="400"  y2="480"/>
+        <line x1="1400" y1="0" x2="500"  y2="480"/>
+        <line x1="1400" y1="0" x2="600"  y2="480"/>
+        <line x1="1400" y1="0" x2="700"  y2="480"/>
+        <line x1="1400" y1="0" x2="800"  y2="480"/>
+        <line x1="1400" y1="0" x2="900"  y2="480"/>
+        <line x1="1400" y1="0" x2="1000" y2="480"/>
+        <line x1="1400" y1="0" x2="1100" y2="480"/>
+        <line x1="1400" y1="0" x2="1200" y2="480"/>
+        <line x1="1400" y1="0" x2="1300" y2="480"/>
+        <line x1="1400" y1="0" x2="1400" y2="480"/>
+        <!-- horizontal arcs (concentric) -->
+        <path d="M1400,0 Q700,120 0,0"/>
+        <path d="M1400,0 Q700,200 0,60"/>
+        <path d="M1400,0 Q700,280 0,140"/>
+        <path d="M1400,0 Q700,360 0,220"/>
+        <path d="M1400,0 Q700,440 0,300"/>
+      </g>
+    </svg>
+
+    <div class="hero-content">
+      <h1 class="hero-title">Contact Us</h1>
+      <nav class="hero-breadcrumb" aria-label="breadcrumb">
+        <a href="#">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Contact</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       GOOGLE MAP
+  ══════════════════════════════ -->
+  <div class="map-wrapper">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.123456789!2d-75.96!3d42.19!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f1234567890%3A0xabcdef123456!2s66+Golden+St%2C+Kirkwood%2C+NY+13795%2C+USA!5e0!3m2!1sen!2sus!4v1234567890"
+      width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- ══════════════════════════════
+       CONTACT MAIN SECTION
+  ══════════════════════════════ -->
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <!-- LEFT: Get A Quote Form -->
+      <div class="contact-form-col">
+        <h2 class="section-title">Get A Quote</h2>
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <input type="text"  class="form-input" placeholder="Enter Name"/>
+            <input type="email" class="form-input" placeholder="Enter Email"/>
+          </div>
+          <div class="form-row">
+            <input type="text" class="form-input" placeholder="Enter Subject"/>
+            <input type="tel"  class="form-input" placeholder="Enter Phone"/>
+          </div>
+          <textarea class="form-input form-textarea" placeholder="Enter Message..."></textarea>
+          <button type="submit" class="btn-send">Send Message</button>
+        </form>
+      </div>
+
+      <!-- RIGHT: Get In Touch -->
+      <div class="contact-info-col">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="info-desc">These are the phrases we stay via way of means of in the whole lotwe do. Each brand we build, and we create.</p>
+
+        <div class="info-list">
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="info-text">
+              <strong>Location</strong>
+              <span>7 Green Lake Street Crawfordsville, IN 47933</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info-text">
+              <strong>Call Now</strong>
+              <span>+1801.234.5678+1784.386.8687</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="info-text">
+              <strong>Email Us</strong>
+              <span>mehedi@company.com</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social buttons -->
+        <div class="info-socials">
+          <a href="#" class="social-square"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-square"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-square"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="social-square"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-menu').classList.toggle('open');
+      document.querySelector('.hamburger').classList.toggle('active');
+    }
+  </script>
+
+  <div class="newsletter-wrapper">
+    <div class="newsletter">
+      <h2>Subscribe to Our Newsletter for the daily Updates</h2>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter Your Email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────────────────────────────────────
+       FOOTER
+  ───────────────────────────────────── -->
+  <footer>
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="#" class="logo" style="color: #fff;">
+          <div class="logo-icon"></div>
+          Itco
+        </a>
+        <p>Mauris ut enim sit amet lacus ornare ullamcor. Praesent placerat nequ puru rhoncu tincidunt odio ultrices. Sed odio feugiat feugiat felis.</p>
+        <div class="social-links">
+          <a href="#">f</a>
+          <a href="#">in</a>
+          <a href="#">𝕏</a>
+          <a href="#">◎</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Tech Solutions</a></li>
+          <li><a href="#">Digital Marketing</a></li>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">IT Consulting</a></li>
+          <li><a href="#">Data Analytics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Projects</a></li>
+          <li><a href="#">Faq ask</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Recent Post</h4>
+       <div class="recent-post">
+                    <img src="recentpost1.png" alt="post1">
+                    <div>
+                        <span><i class="fa-regular fa-calendar"></i> Dec 27, 2023</span>
+                        <p>Efficiency redefined through technology.</p>
+                    </div>
+                </div>
+                <div class="recent-post">
+                    <img src="resentpost2.png" alt="post2">
+                    <div>
+                        <span><i class="fa-regular fa-calendar"></i> Dec 27, 2023</span>
+                        <p>IT Solution for your Company.</p>
+                    </div>
+                </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">© 2024 Itco. All rights reserved.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
